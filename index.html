@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Recipe Finder</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍽️ Enhanced Recipe Finder</h1>
+            <p>Discover delicious recipes from around the world</p>
+        </header>
+
+        <div class="search-wrapper">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search for recipes (e.g., 'Chicken', 'Italian', 'Pasta')..."
+            >
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+            <button class="filter-btn" data-filter="lunch">Lunch</button>
+            <button class="filter-btn" data-filter="dinner">Dinner</button>
+            <button class="filter-btn" data-filter="dessert">Dessert</button>
+        </div>
+
+        <div class="favorites-toggle">
+            <button id="showFavoritesBtn">❤️ Show Favorites</button>
+        </div>
+
+        <div id="recipesContainer" class="recipes-grid">
+            <!-- Recipes will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Recipe Modal -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                <!-- Recipe details will be shown here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+</html>
